@@ -12,23 +12,24 @@ html(lang='en')
   body
     .ui.middle.center.aligned.container.padded.basic.segment
       .ui.piled.segment.padded
-        .ui.top.basic.segment.equal.width.grid
+        .ui.top.padded.one.column.grid
           .ui.column.left.aligned
-            h1.ui Muhammad Hamdy AlAref
+            img.ui.image.circular.right.floated.small.computer.tablet.only.grid(src="me.jpg")
+            h1.ui.header(style="margin-top: 0;") Muhammad Hamdy AlAref
             h3.ui
               i Teaching Assistant<br/>
-              a(href="http://eng.cu.edu.eg/" target="_blank" rel="noopener noreferrer" style="color: inherit") Cairo University, Faculty of Engineering<br/>
-              a(href="http://zewailcity.edu.eg/" target="_blank" rel="noopener noreferrer" style="color: inherit") Zewail City of Science and Technology<br/>
-          .ui.column.right.aligned
-            img.ui.image.circular.right.floated.small(src="me.jpg")
-        .ui.bottom.basic.segment.buttons.three.large
-          a.ui.button(href="https://github.com/muhammad-alaref")
-            i.github.icon
-            | GitHub
-          a.ui.button(href="https://www.linkedin.com/in/muhammad-alaref/")
-            i.linkedin.icon
-            | LinkedIn
-          a.ui.button(href="mailto:muhammad@alaref.me")
+              a(href="http://eng.cu.edu.eg/" target="_blank" rel="noopener noreferrer" style="color: inherit;") Cairo University, Faculty of Engineering<br/>
+              a(href="http://zewailcity.edu.eg/" target="_blank" rel="noopener noreferrer" style="color: inherit;") Zewail City of Science and Technology<br/>
+        .ui.bottom.padded.large.buttons.stackable.centered.grid
+          a.ui.basic.button(href="/Muhammad_Hamdy_AlAref.pdf")
+            i.file.pdf.outline.icon
+            | Resume
+          a.ui.basic.button(href="mailto:muhammad@alaref.me")
             i.envelope.outline.icon
             | Email
-
+          a.ui.basic.button(href="https://github.com/muhammad-alaref")
+            i.github.icon
+            | GitHub
+          a.ui.basic.button(href="https://www.linkedin.com/in/muhammad-alaref/")
+            i.linkedin.icon
+            | LinkedIn
