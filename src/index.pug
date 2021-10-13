@@ -2,34 +2,64 @@ doctype html
 html(lang='en')
   head
     meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
-
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+    style
+      | :root   {--font-family: 'Open Sans', Lato, fantasy;}
+      | a       {color: inherit; text-decoration: none; text-align: center;}
+      | img     {border-radius: 50%; float: right; width: 8em;}
     title Muhammad Hamdy AlAref
-    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css")
-    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
-    script(src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js")
   body
-    .ui.middle.center.aligned.container.padded.basic.segment
-      .ui.piled.segment.padded
-        .ui.top.padded.one.column.grid
-          .ui.column.left.aligned
-            img.ui.image.circular.right.floated.small.computer.tablet.only.grid(src="me.jpg")
-            h1.ui.header(style="margin-top: 0;") Muhammad Hamdy AlAref
-            h3.ui
-              i Teaching Assistant<br/>
-              a(href="http://eng.cu.edu.eg/" target="_blank" rel="noopener noreferrer" style="color: inherit;") Cairo University, Faculty of Engineering<br/>
-              a(href="http://zewailcity.edu.eg/" target="_blank" rel="noopener noreferrer" style="color: inherit;") Zewail City of Science and Technology<br/>
-        .ui.bottom.padded.large.buttons.stackable.centered.grid
-          a.ui.basic.button(href="/Muhammad_Hamdy_AlAref.pdf")
-            i.file.pdf.outline.icon
-            | Resume
-          a.ui.basic.button(href="mailto:muhammad@alaref.me")
-            i.envelope.outline.icon
-            | Email
-          a.ui.basic.button(href="https://github.com/muhammad-alaref")
-            i.github.icon
-            | GitHub
-          a.ui.basic.button(href="https://www.linkedin.com/in/muhammad-alaref/")
-            i.linkedin.icon
-            | LinkedIn
+    main.container
+      article
+        header
+          img(src="me.jpg")
+          hgroup
+            h2 Muhammad Hamdy AlAref
+            p Computer Engineer
+        p
+          u Teaching Assistant<br/>
+          a(href="http://cu.edu.eg/" target="_blank" rel="noopener noreferrer") Cairo University
+          |  ― 
+          a(href="http://eng.cu.edu.eg/" target="_blank" rel="noopener noreferrer") Faculty of Engineering
+          | <br/>
+          a(href="http://zewailcity.edu.eg/" target="_blank" rel="noopener noreferrer") Zewail City
+          |  ― 
+          a(href="https://www.zewailcity.edu.eg/main/content.php?lang=en&alias=university_of_science_and_technology" target="_blank" rel="noopener noreferrer") University of Science and Technology
+          | <br/>
+          a(href="http://aucegypt.edu/" target="_blank" rel="noopener noreferrer") The American University in Cairo
+          |  ― 
+          a(href="https://sse.aucegypt.edu/departments/cse" target="_blank" rel="noopener noreferrer") CSCE
+          | <br/>
+          a(href="http://uottawa.ca" target="_blank" rel="noopener noreferrer") University of Ottawa
+          |  ― 
+          a(href="http://debi.gov.eg" target="_blank" rel="noopener noreferrer") Digital Egypt Builders Initiative
+          | <br/>
+        p
+          u Master of Artificial Intelligence<br/>
+          a(href="http://zewailcity.edu.eg/" target="_blank" rel="noopener noreferrer") Zewail City
+          |  ― 
+          a(href="https://www.zewailcity.edu.eg/main/content.php?lang=en&alias=university_of_science_and_technology" target="_blank" rel="noopener noreferrer") University of Science and Technology
+          | <br/>
+        p
+          u Bachelor of Computer Engineering<br/>
+          a(href="http://cu.edu.eg/" target="_blank" rel="noopener noreferrer") Cairo University
+          |  ― 
+          a(href="http://eng.cu.edu.eg/" target="_blank" rel="noopener noreferrer") Faculty of Engineering
+          | <br/>
+        footer
+          .grid
+            a.contrast.outline(href="/Muhammad_Hamdy_AlAref.pdf" role="button" style="border: 0;")
+              i.fas.fa-file-pdf
+              |  Resume
+            a.contrast.outline(href="mailto:muhammad@alaref.me" role="button" style="border: 0;")
+              i.fas.fa-at
+              |  Email
+            a.contrast.outline(href="https://github.com/muhammad-alaref" role="button" style="border: 0;")
+              i.fab.fa-github
+              |  GitHub
+            a.contrast.outline(href="https://www.linkedin.com/in/muhammad-alaref/" role="button" style="border: 0;")
+              i.fab.fa-linkedin
+              |  LinkedIn
